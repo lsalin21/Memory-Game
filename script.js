@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded',() => {
             img: 'images/Wolf.jpg'
         },
         {
-            name: 'wolf',
+            name: 'bison',
             img: 'images/Wolf.jpg'
         },
         {
@@ -15,35 +15,35 @@ document.addEventListener('DOMContentLoaded',() => {
             img: 'images/Bear.jpg'
         },
         {
-            name: 'bear',
+            name: 'eagle',
             img: 'images/Bear.jpg'
         },
         {
-            name: 'bison',
-            img: 'images/Bison.jpg'
-        },
-        {
-            name: 'bison',
-            img: 'images/Bison.jpg'
-        },
-        {
-            name: 'eagle',
-            img: 'images/Eagle.jpg'
-        },
-        {
-            name: 'eagle',
-            img: 'images/Eagles.jpg'
-        },
-        {
             name: 'owl',
-            img: 'images/Owl.jpg'
-        },
-        {
-            name: 'owl',
-            img: 'images/Owl.jpg'
+            img: 'images/Bison.jpg'
         },
         {
             name: 'squirrel',
+            img: 'images/Bison.jpg'
+        },
+        {
+            name: 'wolf',
+            img: 'images/Eagle.jpg'
+        },
+        {
+            name: 'bison',
+            img: 'images/Eagles.jpg'
+        },
+        {
+            name: 'bear',
+            img: 'images/Owl.jpg'
+        },
+        {
+            name: 'eagle',
+            img: 'images/Owl.jpg'
+        },
+        {
+            name: 'owl',
             img: 'images/Squirrel.jpg'
         },
         {
@@ -51,4 +51,21 @@ document.addEventListener('DOMContentLoaded',() => {
             img: 'images/Squirrel.jpg'
         },
     ]
+
+
+const grid = document.querySelector('.grid')
+
+function createBoard(){
+    for(let i = 0; i < cardArray.length; i++){
+        const card = document.createElement('img')
+        card.setAttribute('src', 'images/Night.jpg')
+        card.setAttribute('date-id', i)
+        //card.addEventListener('click', flipcard)
+        grid.appendChild(card)
+    }
+}
+
+createBoard()
+
+
 })
